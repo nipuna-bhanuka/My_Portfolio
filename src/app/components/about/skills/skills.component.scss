@@ -28,20 +28,64 @@ span{
   font-size: var(--h2-front);
 }
 
+// .logo-container {
+//   display: flex;
+//   justify-content: center;
+//   padding: 0px 20px;
+
+// }
+
+// .logo-item {
+//   margin-bottom: 20px;
+//   text-align: center;
+//   margin: 0 5% ;
+// }
+
+// .logo-item img {
+//   max-width: 100%;
+//   height: auto;
+// }
+// .logo-container {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+// }
+
+// .logo-item {
+//   flex: 1;
+//   max-width: 100px; /* Set the maximum width of the logos */
+// }
+
+// .logo-item img {
+//   width: 100%;
+//   height: auto;
+//   display: block;
+//   margin: 0 auto; /* Center the logos within their containers */
+// }
 .logo-container {
   display: flex;
-  justify-content: center;
-  padding: 0px 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allow logos to wrap onto a new row */
 }
 
 .logo-item {
-  width: 18%;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 30px;
+  flex: 1;
+  max-width: 100px; /* Set the maximum width of the logos */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 10px; /* Add padding to create space between logos */
 }
 
 .logo-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto; /* Center the logos within their containers */
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .logo-item {
+    flex: 1 0 100%; /* Allow logos to take up 100% width on small screens */
+  }
 }

@@ -11,7 +11,6 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/about/resume/resume.component';
 import { SkillsComponent } from './components/about/skills/skills.component';
-
 @NgModule({
   declarations: [
     AppComponent,

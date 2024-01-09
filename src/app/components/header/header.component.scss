@@ -1,6 +1,6 @@
 @import url(../../../styles.scss);
 
-.header{
+.navbar{
   position: fixed;
   width: 100%;
   top: 0;
@@ -14,7 +14,13 @@
   background: var(--bg-color);
   transition: all .50s ease ;
 }
-.logo{
+.navbar-toggler {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand{
   font-size: 36px;
   color:  var(--text-color);
   font-weight: 600;
@@ -25,17 +31,18 @@ span{
 .logo-name{
   font-size: 45px;
 }
-.navlist{
+.navbar-nav{
   display: flex;
+  ;
 }
-.navlist a{
-  font-size: var(--p-font);
+.navbar-nav a{
+  font-size: var(--nav-font);
   font-weight: 500;
   color: var(--other-color);
   margin-left: 40px;
   transition: all .50s ease;
 }
-.navlist a:hover{
+.navbar-nav a:hover{
   color: var(--main-color);
   text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
@@ -52,9 +59,11 @@ span{
   color: var(--main-color);
   border: 2px solid var(--main-color);
   border-radius: 8px;
-  font-size: 15px;
+  font-size: var(--nav-font);
   font-weight: 600;
   transition: all .50s ease;
+  text-align: center;
+  margin-left: 40px;
 }
 .h-btn:hover{
   background: var(--main-color);
